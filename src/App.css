@@ -33,34 +33,10 @@ body {
   right: 0;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.9375rem 8.125rem;
-  z-index: 1000;
-}
-header .logo {
-  width: 18.4375rem;
-  height: auto;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-header nav ul {
-  display: flex;
-  list-style: none;
-}
-header nav ul li {
-  margin-right: 2.1875rem;
-}
-header nav ul li:last-child {
-  margin-right: 0;
-}
 header nav ul li:hover {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
 header nav ul li a {
   font-size: 1.1rem;
   text-decoration: none;
@@ -75,6 +51,7 @@ main #home {
   padding: 0 4rem;
   position: relative;
 }
+
 main #home .shape {
   position: absolute;
 }
@@ -501,17 +478,7 @@ main #contact ul li {
   margin-top: 1rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1.375rem 0;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-
 @media only screen and (max-width: 1200px) {
-  header {
-    padding: 0.9375rem 2.125rem;
-  }
   main #services .main .service {
     gap: 1rem;
   }
@@ -520,10 +487,10 @@ footer {
   }
 }
 @media only screen and (max-width: 924px) {
-  header {
+  /* header {
     padding: 0.9375rem 2.125rem;
     flex-wrap: wrap;
-  }
+  } */
   main #home {
     padding: 0 1rem;
     justify-content: center;
@@ -547,7 +514,7 @@ footer {
   }
   main #about .main .img {
     width: 100%;
-  }
+  }   
   main #about .main .content {
     z-index: 1000;
     max-width: 100%;
@@ -630,9 +597,9 @@ footer {
   }
 }
 @media screen and (max-width: 576px) {
-  header {
+  /* header {
     padding: 0.9375rem 1.125rem;
-  }
+  } */
   header nav li {
     margin: 0.2rem !important;
   }
@@ -681,7 +648,4 @@ footer {
   main #clients .main img {
     max-width: 5rem;
   }
-  footer {
-    font-size: 0.75rem;
-  }
-}/*# sourceMappingURL=main.css.map */
+}
